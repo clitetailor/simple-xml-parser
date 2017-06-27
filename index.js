@@ -1,6 +1,7 @@
 const fs = require('fs')
-const parser = require('./parser')
 const path = require('path')
+const parser = require('./parser')
+const reverse = require('./reverse')
 
 for (let arg of process.argv) {
 	if (arg.match(/.xml$/)) {
@@ -13,9 +14,3 @@ for (let arg of process.argv) {
 		), JSON.stringify(tokens, null, 2))
 	}
 }
-
-// const text = fs.readFileSync(grdFile, 'utf-8')
-
-// const tokens = parser(text);
-
-// fs.writeFileSync('./mondial-3.0.json', JSON.stringify(tokens, null, 2))
