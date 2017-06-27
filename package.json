@@ -1,0 +1,20 @@
+{
+  "name": "simple-xml-parser",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node ./index.js ./mondial-3.0.xml",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xml",
+    "parser"
+  ],
+  "author": "clitetailor",
+  "license": "MIT",
+  "dependencies": {
+    "tokenize-monster": "^0.3.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
