@@ -3,6 +3,11 @@ Simple XML Parser
 
 > A simple xml parser in NodeJS.
 
+Prerequisite
+------------
+
+- NodeJS (version: >= 6)
+
 Installation
 ------------
 
