@@ -7,7 +7,7 @@ const matchSelfCloseTag = tokenizer.createMatcher(
 	selfCloseTag('\\w+'),
 	text => [{
 		type: 'self-close-tag',
-		tagName: tagName(text),
+		name: tagName(text),
 		attrs: tagAttrs(text),
 		text
 	}]

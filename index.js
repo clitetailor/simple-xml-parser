@@ -1,7 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 const parser = require('./parser')
-const reverse = require('./reverse')
 
 for (let arg of process.argv) {
 	if (arg.match(/.xml$/)) {

@@ -1,13 +1,13 @@
 const fs = require('fs')
 const path = require('path')
-const reverse = require('./reverse')
+const extractText = require('./extract-text')
 
 for (let arg of process.argv) {
 	if (arg.match(/.json$/)) {
 		const text = fs.readFileSync(arg)
 		const tokens = JSON.parse(text);
 
-		const newXML = reverse(tokens)
+		const newXML = extractText(tokens)
 
 		fs.writeFileSync(path.resolve(
 			path.dirname(arg),
